@@ -5,7 +5,7 @@
 set -e # Exit immediately if a command exits with a non-zero status.
 set -x # Print commands and their arguments as they are executed
 
-# This script is used to generate protobuf files for all services with Docker.
+# This script is used to generate protobuf files for all services with Docker
 
 . ./.env
 
@@ -38,7 +38,7 @@ if [ -z "$1" ]; then
   gen_proto_cpp currency
   #gen_proto_ruby email
   #gen_proto_ts frontend
-  #gen_proto_js payment
+  # gen_proto_js payment
   gen_proto_go product-catalog
   #gen_proto_php quote
   gen_proto_python recommendation
